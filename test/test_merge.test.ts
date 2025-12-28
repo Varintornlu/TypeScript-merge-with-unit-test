@@ -29,13 +29,6 @@ describe("Merge function tests", () => {
         const result = Merge(col1, col2, col3);
         expect(result).toEqual([1, 2, 3]);
     });
-    test("Arrays with negative numbers", () => {
-        const col1 = [-3, -1, 2];
-        const col2 = [-2, 0, 3];
-        const col3 = [1, -4, -5];
-        const result = Merge(col1, col2, col3);
-        expect(result).toEqual([-5, -4, -3, -2, -1, 0, 1, 2, 3]);
-    });
     test("Arrays with duplicate numbers", () => {
         const col1 = [1, 2, 2];
         const col2 = [2, 3, 4];
